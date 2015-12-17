@@ -198,5 +198,3 @@ FakesAssemblies/
 # Moje zmiany do Visuala
 
 */Debug
-*/*.vcxproj
-*/*.filters
