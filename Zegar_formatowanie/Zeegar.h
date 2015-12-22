@@ -14,6 +14,8 @@ public:
 
 	Zeegar(int, int, int);
 	Zeegar();
+	class Blad_ujemne{};
+	class Blad_wczytywanie{};
 
 	// Destruktor
 

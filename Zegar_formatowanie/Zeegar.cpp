@@ -3,6 +3,8 @@
 
 Zeegar::Zeegar(int a, int b, int c)
 {
+	if (a < 0 || b < 0 || c < 0)
+		throw Blad_ujemne();
 	godz = a;
 	min = b;
 	sec = c;
@@ -10,9 +12,32 @@ Zeegar::Zeegar(int a, int b, int c)
 
 Zeegar::Zeegar()
 {
-	godz = 0;
-	min = 0;
-	sec = 0;
+	int a, b, c;
+	cin >> a;
+	if (cin.good())
+	{
+		cin >> b;
+
+		if (cin.good())
+		{
+			cin >> c;
+
+			if (cin.good())
+			{
+				if (a < 0 || b < 0 || c < 0)
+					throw Blad_ujemne();
+				godz = a;
+				min = b;
+				sec = c;
+			}
+			else
+				throw Blad_wczytywanie();
+		}
+		else
+			throw Blad_wczytywanie();
+	}
+	else
+		throw Blad_wczytywanie();
 }
 
 Zeegar::~Zeegar()

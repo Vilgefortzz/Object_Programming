@@ -12,9 +12,10 @@ protected:
 	string nazwisko;
 	string pesel;
 	miesiac miesiac_urodzenia;
+	int wiek;
 public:
 	person();
-	person(string, string, string, miesiac);
+	person(string, string, string, miesiac, int);
 	virtual void wyswietl();
 	virtual ~person();
 };

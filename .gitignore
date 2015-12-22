@@ -198,3 +198,4 @@ FakesAssemblies/
 # Moje zmiany do Visuala
 
 */Debug
+*.csv

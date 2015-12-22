@@ -2,5 +2,5 @@
 
 void DISPLAY::wypisz(Zeegar& obiekt)
 {
-	cout << obiekt.godz << setfill(':') << setw(2) << obiekt.min << setfill(':') << setw(2) << obiekt.sec << setfill(':') << setw(2) << endl;
+	cout << obiekt.godz << setw(2) << setfill(':') << obiekt.min << setw(2) << setfill(':') << obiekt.sec << endl;
 }

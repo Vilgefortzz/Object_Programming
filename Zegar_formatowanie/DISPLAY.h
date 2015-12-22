@@ -2,7 +2,7 @@
 #include "Zeegar.h"
 #include <iomanip>
 
-class DISPLAY : public Zeegar
+class DISPLAY
 {
 public:
 	static void wypisz(Zeegar&);

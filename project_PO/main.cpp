@@ -8,10 +8,12 @@ typedef student<2967690, double> stwarzam;
 
 int main()
 {
-	student<2967690, int>studencik(10.5, "Michal", "Fajny", "48694563574", marzec);
+	student<2967690, int>studencik(10.5, "Michal", "Fajny", "48694563574", marzec, 18);
 	person* wsk1 = &studencik;
 
-	stwarzam student2(10.5, "Michal", "Fajny", "58395674275", marzec);
+	student<2967690, int>studenciach(9, "Michal", "Fajny", "48694563574", marzec, 18);
+
+	stwarzam student2(10.5, "Malgorzata", "Tratwa", "58395674275", lipiec, 18);
 	person* wsk2 = &student2;
 
 	tworzenie_studenta student3;
