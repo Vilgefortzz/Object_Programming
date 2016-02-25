@@ -74,6 +74,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <OpenMPSupport>true</OpenMPSupport>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -120,12 +121,19 @@
   <ItemGroup>
     <ClInclude Include="DISPLAY.h" />
     <ClInclude Include="FILES.h" />
+    <ClInclude Include="matrix.h" />
+    <ClInclude Include="nauczyciel.h" />
+    <ClInclude Include="person.h" />
+    <ClInclude Include="student.h" />
     <ClInclude Include="Zeegar.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DISPLAY.cpp" />
     <ClCompile Include="FILES.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="matrix.cpp" />
+    <ClCompile Include="nauczyciel.cpp" />
+    <ClCompile Include="person.cpp" />
     <ClCompile Include="Zeegar.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
